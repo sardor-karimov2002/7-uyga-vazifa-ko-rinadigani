@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-dars uyga vazifa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .catch{
+        color: red;
+    }
+    .Natija{
+        color: aliceblue;
+        font-size: 18px;
+    }
+</style>
+<body>
+    
+<h3 class="d-flex justify-content-center p-3 ">Kurslar valutasi </h3>
+
+<div class="container">
+
+    <form id="form" class="form d-flex row justify-content-between">
+        <div class="d-flex flex-column col-6">
+            <label for="" class="p-2 h5">USD Birligida mablag' kiriting:</label>
+            <input  class="form__input w-100 form-control" type="number" placeholder="***So'm">
+            <div id="catch" class="catch" for=""></div>
+        </div>
+        <div class="mt-5  col-6">
+            <select class="form__select btn-info w-100 p-1" name="" id="">
+                <option disabled="true" selected="true" >Pul birligini tanlang</option>
+                
+                <option value="10800">dollir</option>
+                <option value="10354.03">rubl</option>
+                <option value="160">euro</option>
+            </select>
+        </div>
+        <div class="mt-5 col-5">
+            <button class="form-control bg-danger w-25" type="submit"> Hisobla</button>
+            <div class="Natija mt-3 p-2 bg-success accordion-item">Natija: <span id="result">...</span> </div>
+        </div>
+    </form>
+</div>
+
+</body>
+<script src="./js/main.js"></script>
+</html>
